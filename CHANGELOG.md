@@ -35,6 +35,32 @@
 ### Contributors
 - [@jamezrin](https://github.com/jamezrin) ([#8211](https://github.com/dbt-labs/dbt-core/issues/8211))
 
+## dbt-core 1.7.0-b15 - September 13, 2023
+
+### Features
+
+- Add --no-inject-ephemeral-ctes flag for `compile` command, for usage by linting. ([#8480](https://github.com/dbt-labs/dbt-core/issues/8480))
+- Accept a `dbt-cloud` config in dbt_project.yml ([#8438](https://github.com/dbt-labs/dbt-core/issues/8438))
+- Support atomic replace in the global replace macro ([#8539](https://github.com/dbt-labs/dbt-core/issues/8539))
+
+### Fixes
+
+- Add explicit support for integers for the show command ([#8153](https://github.com/dbt-labs/dbt-core/issues/8153))
+- Parse the correct schema version from manifest ([#8544](https://github.com/dbt-labs/dbt-core/issues/8544))
+- make version comparison insensitive to order ([#8571](https://github.com/dbt-labs/dbt-core/issues/8571))
+- Update metric helper functions to work with new semantic layer metrics ([#8134](https://github.com/dbt-labs/dbt-core/issues/8134))
+
+### Under the Hood
+
+- Audit potential circular dependencies ([#8349](https://github.com/dbt-labs/dbt-core/issues/8349))
+- Add functional test for advanced ref override ([#8566](https://github.com/dbt-labs/dbt-core/issues/8566))
+- Add typing to __init__ in base.py ([#8398](https://github.com/dbt-labs/dbt-core/issues/8398))
+- Fix untyped functions in task/runnable.py (mypy warning) ([#8402](https://github.com/dbt-labs/dbt-core/issues/8402))
+
+### Contributors
+- [@benmosher](https://github.com/benmosher) ([#8480](https://github.com/dbt-labs/dbt-core/issues/8480))
+- [@dave-connors-3](https://github.com/dave-connors-3) ([#8153](https://github.com/dbt-labs/dbt-core/issues/8153))
+
 
 ## dbt-core 1.7.0-b1 - August 17, 2023
 
